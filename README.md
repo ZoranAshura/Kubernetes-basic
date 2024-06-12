@@ -1,7 +1,6 @@
 ## Part 1. Ready-made manifest
 
 #### 1. Run a Kubernetes environment with 4GB memory
-![1.1](./images/part_1/1.1.png)
 ![1.2](./images/part_1/1.2.png)
 
 #### 2. Apply the manifest from the /src/example directory to the created Kubernetes environment

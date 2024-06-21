@@ -61,7 +61,9 @@ spec:
         name: session-service
         envFrom:
           - configMapRef:
-              name: session-config 
+              name: session-config
+          - secretRef:
+              name: postgres-secret
         command: ["java", "-jar", "/app/app.jar"]
         ports:
         - containerPort: 8081
@@ -89,12 +91,13 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    run: session-service-svc
+    run: session-service
   name: session
 spec:
+  type: NodePort
   ports:
   - port: 8081
     protocol: TCP
     targetPort: 8081
   selector:
-    run: session
+    run: session-service

@@ -59,8 +59,9 @@ spec:
       - image: zoranashura402/session
         imagePullPolicy: IfNotPresent
         name: session-service
-        env:
-        - 
+        envFrom:
+          - configMapRef:
+              name: session-config 
         command: ["java", "-jar", "/app/app.jar"]
         ports:
         - containerPort: 8081

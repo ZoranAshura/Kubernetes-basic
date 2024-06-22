@@ -57,6 +57,14 @@ kind: ConfigMap
 metadata:
   name: report-config
 data:
+  POSTGRES_DB: statistics_db
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: booking-config
+data:
   POSTGRES_DB: reservations_db
 
 ---

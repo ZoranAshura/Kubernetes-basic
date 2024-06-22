@@ -92,3 +92,35 @@ spec:
     targetPort: 8086
   selector:
     run: report-service
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    run: gateway-service
+  name: gateway-service
+spec:
+  ports:
+  - port: 8087
+    protocol: TCP
+    targetPort: 8087
+  selector:
+    run: gateway-service
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    run: message-queue
+  name: message-queue
+spec:
+  ports:
+  - port: 5672
+    protocol: TCP
+    targetPort: 5672
+  selector:
+    run: message-queue

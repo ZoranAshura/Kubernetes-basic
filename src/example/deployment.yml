@@ -73,8 +73,8 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    run: session-service
-  name: session-service
+    run: booking-service
+  name: booking-service
 spec:
   replicas: 1
   selector:
@@ -147,8 +147,8 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    run: session-service
-  name: session-service
+    run: loyalty-service
+  name: loyalty-service
 spec:
   replicas: 1
   selector:
@@ -182,8 +182,8 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    run: session-service
-  name: session-service
+    run: report-service
+  name: report-service
 spec:
   replicas: 1
   selector:

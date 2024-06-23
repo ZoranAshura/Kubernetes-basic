@@ -69,5 +69,5 @@
 ![2.9](./images/part_2/2.16.png)
 ![2.9](./images/part_2/2.17.png)
 ![2.9](./images/part_2/2.18.png)
-
-
+![2.9](./images/part_2/2.19.png)
+> The same amount of time 
